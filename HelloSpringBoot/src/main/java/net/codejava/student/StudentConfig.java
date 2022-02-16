@@ -16,10 +16,12 @@ public class StudentConfig {
         return args -> {
             Student zach = new Student("Zach", LocalDate.of(2000, 1, 5),"zbaccaro@email.com");
             Student alex = new Student("Alex", LocalDate.of(2004, 1, 5),"alex@email.com");
+            Student tom = new Student("Tom", LocalDate.of(2004, 1, 5),"tom@email.com");
 
             ArrayList<Student> s = new ArrayList<Student>();
             s.add(zach);
             s.add(alex);
+            s.add(tom);
             repository.saveAll(s);
         };
 

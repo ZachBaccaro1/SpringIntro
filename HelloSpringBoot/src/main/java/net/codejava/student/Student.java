@@ -18,6 +18,7 @@ public class Student {
             strategy = GenerationType.SEQUENCE,
             generator =  "student_sequence"
     )
+
     private int id;
     private String name;
     @Transient
